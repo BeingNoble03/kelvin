@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>K to C and F</title>
+</head>
+<body>
+    <h2>Calculate K to C and F</h2>
+    <div class = "main">
+        <table cellpadding = "5px">
+            <tr>
+                <td><input type="text" id = "input" class="input" placeholder="Enter in Kelvin"></td>
+                <td><button type="button" class="btn btn-outline-dark btn-sm" onclick="calculate()">Calculate</button></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            </td>
+        </tr>
+        </table>
+        <center>
+            <label class="output" id = "output" style="font-size: 15px;">
+                Your Calculated Temperatures appear here.
+            </label>
+        </center>
+    </div>
+    <footer>
+        Fait avec amour par <a href="https://github.com/beingnoble03">beingnoble03</a>
+    </footer>
+    <script>
+        function calculate(){
+        var input = document.getElementById("input").value;
+        var tempc = input - 273;
+        var tempf = 1.8 * tempc + 32;
+        document.getElementById("output").innerHTML = "temperature in celcius °" + tempc + "C & " + "temperature in farenheit °" + tempf + "F";
+        }
+    </script>
+</body>
+</html>

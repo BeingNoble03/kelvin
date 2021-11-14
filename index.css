@@ -1,0 +1,13 @@
+table{
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: rgb(44, 42, 42);
+    color: white;
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+  }
